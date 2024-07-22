@@ -1,0 +1,110 @@
+[
+  {
+    "secret": "Name",
+    "pattern": "(?<=\\bName\\b[:\\s])[A-Za-z'-,.\\s]{2,}"
+  },
+  {
+    "secret": "Email",
+    "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+  },
+  {
+    "secret": "Phone_Number",
+    "pattern": "\\b(?:\\+?\\d{1,2}\\s?)?(?:\\(?\\d{3}\\)?[\\s.-]?)?\\d{3}[\\s.-]?\\d{4}\\b"
+  },
+  {
+    "secret": "Password",
+    "pattern": "(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}"
+  },
+  {
+    "secret": "AWS_Access_Key",
+    "pattern": "AKIA[0-9A-Z]{16}"
+  },
+  {
+    "secret": "AWS_Secret_Key",
+    "pattern": "[A-Za-z0-9/+=]{40}"
+  },
+  {
+    "secret": "GitHub_Classic_Token",
+    "pattern": "ghp_[a-zA-Z0-9]{36}"
+  },
+  {
+    "secret": "GitHub_Finegrained_Token",
+    "pattern": "github_pat_[a-zA-Z0-9]{22}_[a-zA-Z0-9]{59}"
+  },
+  {
+    "secret": "GitHub_OAuth2.0_Token",
+    "pattern": "gho_[a-zA-Z0-9]{36}"
+  },
+  {
+    "secret": "GitHub_User2Server_Token",
+    "pattern": "ghu_[a-zA-Z0-9]{36}"
+  },
+  {
+    "secret": "GitHub_Server2Server_Token",
+    "pattern": "ghs_[a-zA-Z0-9]{36}"
+  },
+  {
+    "secret": "GitHub_Refresh_Token",
+    "pattern": "ghr_[a-zA-Z0-9]{36}"
+  },
+  {
+    "secret": "GitLab_API_Token",
+    "pattern": "glpat-[a-zA-Z0-9_-]{20}"
+  },
+  {
+    "secret": "Google_Cloud_API",
+    "pattern": "[A-Za-z0-9_]{21}--[A-Za-z0-9_]{8}"
+  },
+  {
+    "secret": "Google_Cloud_OAuth2.0",
+    "pattern": "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+  },
+  {
+    "secret": "Paypal_Token",
+    "pattern": "access_token\\$prod_[0-9a-zA-Z]{161}"
+  },
+  {
+    "secret": "Slack_API_Token",
+    "pattern": "xox[baprs]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-zA-Z0-9]{32}"
+  },
+  {
+    "secret": "Facebook_Access_Token",
+    "pattern": "EAACEdEose0cBA[0-9A-Za-z]+"
+  },
+  {
+    "secret": "Twitter_Secret_Key",
+    "pattern": "([0-9a-zA-Z]{35,44})"
+  },
+  {
+    "secret": "Stripe_API_Key",
+    "pattern": "sk_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "secret": "Square_Access_Token",
+    "pattern": "sq0atp-[0-9A-Za-z\\-]{22}"
+  },
+  {
+    "secret": "SendGrid_API_Key",
+    "pattern": "SG\\.[0-9a-zA-Z_-]{22}\\.[0-9a-zA-Z_-]{43}"
+  },
+  {
+    "secret": "Mailgun_API_Key",
+    "pattern": "key-[0-9a-zA-Z]{32}"
+  },
+  {
+    "secret": "Twilio_API_Key",
+    "pattern": "SK[0-9a-fA-F]{32}"
+  },
+  {
+    "secret": "Dropbox_API_Key",
+    "pattern": "sl\\.[a-z0-9_-]{28}"
+  },
+  {
+    "secret": "Heroku_API_Key",
+    "pattern": "[0-9a-fA-F]{32}-[0-9a-fA-F]{32}"
+  },
+  {
+    "secret": "Azure_Storage_Account_Key",
+    "pattern": "([A-Za-z0-9+/]{88})"
+  }
+]
